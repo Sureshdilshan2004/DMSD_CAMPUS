@@ -1,0 +1,108 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://cdn.pixabay.com/photo/2016/11/30/13/28/university-student-1872810_1280.jpg') no-repeat center center/cover;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+#frm {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+#frm h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0984e3;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    color: #333;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border: 1px solid #0984e3;
+    box-shadow: 0px 0px 8px rgba(9, 132, 227, 0.3);
+    outline: none;
+}
+
+#btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #0984e3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s ease;
+}
+
+
+#btn:hover {
+    background: #74b9ff;
+    transform: translateY(-2px);
+}
+
+a {
+    font-size: 14px;
+    color: #0984e3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+a:hover {
+    color: #74b9ff;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    #frm {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #frm h1 {
+        font-size: 20px;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 14px;
+    }
+
+    #btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
